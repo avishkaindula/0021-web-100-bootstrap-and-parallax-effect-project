@@ -21,6 +21,9 @@
     ></script>
     <!-- This is how we add the bootstrap JavaScript code to the project. -->
     <!-- If we don't add the "defer" attribute here, we need to add this link at the end of the body element. -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- We link a style.css file like this in order to make custom changes by ourselves. -->
+    <!-- We usually add this link "after" the bootstrap links as we need to overwrite those bootstrap styles. -->
   </head>
   <body>
     <header>
@@ -86,15 +89,11 @@
       </nav>
     </header>
     <main>
-      <section
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-bs-ride="true"
-      >
+      <section id="carousel-example" class="carousel slide" data-bs-ride="true">
         <div class="carousel-indicators">
           <button
             type="button"
-            data-bs-target="#carouselExampleIndicators"
+            data-bs-target="#carousel-example"
             data-bs-slide-to="0"
             class="active"
             aria-current="true"
@@ -102,13 +101,13 @@
           ></button>
           <button
             type="button"
-            data-bs-target="#carouselExampleIndicators"
+            data-bs-target="#carousel-example"
             data-bs-slide-to="1"
             aria-label="Slide 2"
           ></button>
           <button
             type="button"
-            data-bs-target="#carouselExampleIndicators"
+            data-bs-target="#carousel-example"
             data-bs-slide-to="2"
             aria-label="Slide 3"
           ></button>
@@ -127,7 +126,7 @@
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carousel-example"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -136,7 +135,7 @@
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carousel-example"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
