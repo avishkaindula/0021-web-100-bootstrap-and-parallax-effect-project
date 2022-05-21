@@ -27,7 +27,11 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <!-- fixed-top wasn't there in the first code we copied and pasted here. -->
+        <!-- but we found out from the documentation that we can fix the nav bar to the top just by adding fixed-top class here. -->
+        <!-- so we added just that class to the nav and the nav bar fixed at the top automatically. -->
+        <!-- and that's how we generally use bootstrap. -->
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Navbar</a>
           <button
